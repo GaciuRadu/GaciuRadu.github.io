@@ -1,5 +1,5 @@
 function showHome() {
-  var page = document.getElementById("skills");
+  var page = document.getElementById("home");
   page.style.display = "block";
 }
 

@@ -5,43 +5,35 @@ function hideAllPages() {
   document.getElementById("projects").style.display = "none";
 }
 
-function showHome() {
-  hideAllPages();
-  var page = document.getElementById("home");
-  page.style.display = "block";
-}
-
-function showSkills() {
-  hideAllPages();
-  var page = document.getElementById("home");
-  page.style.display = "none";
-
-  var page = document.getElementById("skills");
-  console.info(page);
-  page.style.display = "block";
-  console.warn("hei te exectuti");
-}
-
 function showLanguages() {
-  hideAllPages();
-  var page = document.getElementById("home");
-  page.style.display = "none";
+  showPage("languages");
+  // hideAllPages();
+  // var page = document.getElementById("home");
+  // page.style.display = "none";
 
-  var page = document.getElementById("languages");
-  console.info(page);
-  page.style.display = "block";
-  console.warn("hei te exectuti");
+  // var page = document.getElementById("languages");
+  // console.info(page);
+  // page.style.display = "block";
+  // console.warn("hei te exectuti");
 }
 
 function showProjects() {
-  hideAllPages();
-  var page = document.getElementById("home");
-  page.style.display = "none";
+  showPage("Projects");
+  // hideAllPages();
+  // var page = document.getElementById("home");
+  // page.style.display = "none";
 
-  var page = document.getElementById("projects");
-  console.info(page);
-  page.style.display = "block";
-  console.warn("hei te exectuti");
+  // var page = document.getElementById("projects");
+  // console.info(page);
+  // page.style.display = "block";
+  // console.warn("hei te exectuti");
 }
 
-showHome();
+function showPage(id) {
+  hideAllPages();
+  var page = document.getElementById(id);
+  console.info("show", page);
+  page.style.display = "block";
+}
+
+showPage("Home");

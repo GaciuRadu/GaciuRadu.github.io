@@ -12,4 +12,4 @@ showHome();
 
 var employed = false;
 var age = 24;
-var name = Radu;
+var name = "Radu";

@@ -10,6 +10,7 @@ function showSkills() {
 
 showHome();
 
-var employed = false;
-var age = 24;
-var name = "Radu";
+function showlanguages() {
+  var page = document.getElementById("languages");
+  page.style.display.getElementById("block");
+}

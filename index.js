@@ -16,4 +16,4 @@ function showPage(id) {
 }
 
 // start exec
-showPage("activePage");
+showPage(activePage);

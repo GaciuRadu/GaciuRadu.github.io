@@ -5,15 +5,12 @@ function showHome() {
 showHome();
 function showSkills() {
   var page = document.getElementById("skills");
+  console.info(page);
   page.style.display = "block";
 }
 
 function showLanguages() {
   var page = document.getElementById("languages");
-  page.style.display.getElementById("block");
-}
-
-function showContact() {
-  var page = document.getElementById("??????????");
-  page.style.display.getElementById("block");
+  console.info(page);
+  page.style.display = "block";
 }

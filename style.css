@@ -35,6 +35,11 @@ header {
   align-content: center;
   justify-content: flex-start;
   align-items: center;
+
+  #my-table {
+    border: 40px;
+    font-size: xx-large;
+  }
 }
 #side-menu {
   flex: 1;

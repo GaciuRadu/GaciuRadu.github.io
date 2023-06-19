@@ -18,7 +18,6 @@ name = "Radu";
 
 function printInfo() {
   console.log(typeof skills, skills, age);
-
   console.info("my name", name);
 
   console.warn("person type", typeof person, person);

@@ -1,11 +1,19 @@
-function showHome() {
-  var page = document.getElementById("home");
-  page.style.display = "block";
+var activePage = "home";
+
+// utilities function
+
+function hide(id) {
+  console.info("hide %o element", id);
+  document.getElementById(id).style.display = "none";
 }
 
-function showSkills() {
-  var page = document.getElementById("skills");
+function showPage(id) {
+  hide(activePage);
+  var page = document.getElementById(id);
+  console.info("show %o ..", id, page);
   page.style.display = "block";
+  activePage = id;
 }
 
-showHome();
+// start exec
+showPage(activePage);

@@ -23,3 +23,18 @@ function printInfo() {
 
   console.warn("person type", typeof person, person);
 }
+
+document.getElementById("job-title").addEventListener("click", function () {
+  document.getElementById("job-title").style.color = "red";
+  document.getElementById("job-title").innerHTML = "Wow ce <i>fain</i> este";
+});
+
+document.getElementById("job-title").addEventListener("click", function () {
+  if ((document.getElementById("job-title").style.color = "blue")) {
+    document.getElementById("job-title").style.color = "red";
+    document.getElementById("job-title").innerHTML = "Wow ce <i>fain</i> este";
+  } else {
+    document.getElementById("job-title").style.color = "blue";
+    document.getElementById("job-title").innerHTML = "Wow ce <i>NASPA</i> este";
+  }
+});

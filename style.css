@@ -40,18 +40,19 @@ header {
   align-content: center;
   justify-content: flex-start;
   align-items: center;
-
-  #my-table {
-    border: 40px;
-    font-size: xx-large;
-  }
-  #log {
-    border: 1px solid red;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-  }
 }
+
+#my-table {
+  border: 40px;
+  font-size: xx-large;
+}
+#log {
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
 #side-menu {
   flex: 1;
   padding: 10px 10px 5px 10px;
@@ -77,11 +78,11 @@ h2 {
 }
 
 #job-title {
-  font-weight: bold;
   display: block;
   color: #334455;
   margin: 5px 0px;
   font-weight: bold;
+  font-size: 2.2em;
 }
 
 .page {

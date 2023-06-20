@@ -22,7 +22,7 @@ header {
   background: linear-gradient(45deg, #0798ab99, transparent);
 }
 #header-info {
-  padding: 30px;
+  padding: 20px;
   flex: 1;
 }
 
@@ -44,6 +44,12 @@ header {
   #my-table {
     border: 40px;
     font-size: xx-large;
+  }
+  #log {
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
   }
 }
 #side-menu {
@@ -74,7 +80,7 @@ h2 {
   font-weight: bold;
   display: block;
   color: #334455;
-  margin: 5px 0;
+  margin: 5px 0px;
   font-weight: bold;
 }
 

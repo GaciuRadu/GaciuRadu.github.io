@@ -9,9 +9,16 @@
   </head>
   <body>
     <header>
-      <h1>Radu Cristian Gaciu</h1>
-      <img src="selfie.jpeg" alt="" height="100" />
-      <h2 id="job-title">Web Developer</h2>
+      <div id="header-wrapper">
+        <div id="my-picture">
+          <img src="selfie.jpeg" alt="" height="100" alt="Radu" />
+        </div>
+        <div id="header-info">
+          <h1>Radu Cristian Gaciu</h1>
+          <h2 id="job-title">Web Developer at ATS</h2>
+        </div>
+      </div>
+
       <ul id="top-menu-bar">
         <li><a href="#">Home</a></li>
         <li><a href="#" onclick="showSkills()">Skills</a></li>
@@ -62,9 +69,9 @@
             <li class="favorite">JS</li>
           </ul>
         </div>
-        <div class="page">
-          <h2>Know Languages</h2>
-          <table border="1" secret national>
+        <div id="languages" class="page">
+          <h2>Known Languages</h2>
+          <table id="my-table" border="1" secret national>
             <tr>
               <th>Language</th>
               <th>Level</th>

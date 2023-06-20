@@ -25,6 +25,13 @@ img {
 header {
   background: linear-gradient(45deg, #0798ab99, transparent);
 }
+footer {
+  padding: 10px 10px 8px 10px;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
 #header-info {
   padding: 20px;
   flex: 1;

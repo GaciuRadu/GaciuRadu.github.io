@@ -31,6 +31,10 @@ footer {
   gap: 10px;
   justify-content: center;
 }
+
+footer a {
+  color: #181515;
+}
 #header-info {
   padding: 20px;
   flex: 1;

@@ -147,6 +147,10 @@ th {
   color: #fff;
 }
 
+#top-menu-bar a.active {
+  background-color: #05798899;
+}
+
 #top-menu-bar a:hover {
   background-color: #057988;
 }

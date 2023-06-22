@@ -153,7 +153,7 @@ th {
 
 footer {
   padding: 10px 10px 8px 10px;
-  background: linear-gradient(45deg, #066f7c, transparent);
+  background: linear-gradient(to left, #066f7c, transparent);
   display: flex;
   gap: 10px;
   justify-content: center;

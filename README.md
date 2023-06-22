@@ -7,7 +7,7 @@ First try
 
 [GaciuRadu.github.io](https://gaciuradu.github.io/)
 
-# GaciuRadu.github.io
+# 🔑 GaciuRadu.github.io
 
 My first try, 16 Jun, 2023
 !
@@ -28,3 +28,10 @@ To start web server use:
 - git status
 - git commit -m"the name of the commit"
 - git push
+
+# 🗂️ Open local host
+
+- 'CTRL+SHIFT+P'
+- Browser Sync: Exit All
+- Browser Sync: Sever mode in browser <-|
+- / <-|

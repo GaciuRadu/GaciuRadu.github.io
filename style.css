@@ -30,6 +30,8 @@ header {
 }
 #my-picture {
   padding: 5px;
+  width: 108px;
+  height: 108px;
 }
 
 #header-info {

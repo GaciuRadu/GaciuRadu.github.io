@@ -42,8 +42,9 @@ header {
 }
 
 #my-table {
-  width: 90%;
+  width: 50%;
   border: 40px;
+  min-width: 330px;
   font-size: x-large;
 }
 
@@ -148,12 +149,12 @@ th {
 
 footer {
   padding: 10px 10px 8px 10px;
-  background: linear-gradient(45deg, #0798ab99, transparent);
+  background: linear-gradient(45deg, #066f7c, transparent);
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 
 footer a {
-  color: #0798abe;
+  color: white;
 }

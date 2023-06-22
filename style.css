@@ -19,7 +19,6 @@ header {
 }
 
 #header-wrapper {
-  min-height: 120px;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -29,13 +28,12 @@ header {
   align-items: center;
 }
 
-#my-picture {
-  border-style: solid;
+#my-picture img {
   border-radius: 50%;
-  border: 2px solid black;
-  padding: 1px 3px 1px 5px;
-  width: 108px;
-  height: 108px;
+  border: 4px solid #fff;
+}
+#my-picture {
+  padding: 5px;
 }
 
 #header-info {

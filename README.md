@@ -14,12 +14,12 @@ My first try, 16 Jun, 2023
 
 ## 🎙️ Developer notes -titluri
 
-To start web server use:
+# 🗂️ To start web server use: (Open local host)
 
--`CTRL+ Shift+ P` ->`Browser Sync: Server mode in broser'
+-`CTRL+ Shift+ P` ->`Browser Sync: Server mode in broser' ⏎
 
-- ** Browser Sync: Server mode in browser **
-- type `\` and press 'Enter'
+- ** Browser Sync: Server mode in browser ** ⏎
+- type `\` and press 'Enter' ⏎
 
 # 💾 How to commit
 
@@ -28,10 +28,3 @@ To start web server use:
 - git status
 - git commit -m"the name of the commit"
 - git push
-
-# 🗂️ Open local host
-
-- 'CTRL+SHIFT+P'
-- Browser Sync: Exit All
-- Browser Sync: Sever mode in browser <-|
-- / <-|

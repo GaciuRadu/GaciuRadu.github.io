@@ -21,10 +21,6 @@ header {
 #header-wrapper {
   display: flex;
   flex-direction: row;
-  position: relative;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
   align-items: center;
 }
 

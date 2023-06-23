@@ -44,24 +44,31 @@ function clickOnMenu(e) {
   }
 }
 
-function showSkills() {
-  var skills = [
-    { name: "HTML", favorite: true },
-    { name: "Css" },
-    { name: "JS", favorite: true },
-  ];
+function showSkills(skills) {
+  console.warn("showSkills", skills);
+
   var htmlSkills = skills.map(function (skill) {
-    console.info("inside map", skill);
     // <li class="favorie">HTML</li>;
+    console.info("skill", skill);
     var cls = skill.favorite ? "favorite" : "";
     return `<li class="${cls}">${skill.name}</li>`;
   });
-  console.info("skills", htmlSkills);
+
   var ul = $("#skills ul");
   ul.innerHTML = htmlSkills.join("");
+}
+
+function loadSkills() {
+  var response = fetch("skills.json");
+  var loaded = response.then(function (r) {
+    return r.json();
+  });
+  loaded.then(function (skills) {
+    showSkills(skills);
+  });
 }
 
 // start exec
 showPage(activePage);
 $("#top-menu-bar").addEventListener("click", clickOnMenu);
-showSkills();
+loadSkills();

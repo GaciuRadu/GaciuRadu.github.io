@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "skills";
 
 // utilities function
 
@@ -44,6 +44,21 @@ function clickOnMenu(e) {
   }
 }
 
+function showSkills() {
+  var skills = ["HTML", "css", "JS"];
+  var htmlSkills = skills.map(function (skill) {
+    console.info("inside map", skill);
+    // <li class="favorie">HTML</li>;
+    return `<li>${skill}</li>`;
+  });
+  console.info("map", htmlSkills);
+
+  var ul = $("#skills ul");
+  ul.innerHTML = htmlSkills.join("");
+}
+
 // start exec
 showPage(activePage);
 $("#top-menu-bar").addEventListener("click", clickOnMenu);
+
+var skills = ["HTML", "css", "JS"];

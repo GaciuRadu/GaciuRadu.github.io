@@ -2,24 +2,31 @@ var activePage = "home";
 
 // utilities function
 
+function $(selector) {
+  return document.querySelector(selector);
+}
+
 function hide(id) {
   console.info("hide %o  element hide", id);
-  document.getElementById(id).style.display = "none";
+  $(`#${id}`).style.display = "none";
+}
+
+function show(id) {
+  var page = $("#" + id);
+  console.info("show %o  element showPage!", id, page);
+  page.style.display = "block";
 }
 
 function showPage(id) {
-  var oldlink = document.querySelector(
-    `#top-menu-bar a[data-page=${activePage}]`
-  );
+  var oldlink = $(`#top-menu-bar a[data-page=${activePage}]`);
   oldlink.classList.remove("active");
+
   hide(activePage);
 
-  var link = document.querySelector(`#top-menu-bar a[data-page=${id}]`);
+  var link = $(`#top-menu-bar a[data-page=${id}]`);
   link.classList.add("active");
 
-  var page = document.getElementById(id);
-  console.info("show %o  element showPage!", id, page);
-  page.style.display = "block";
+  show(id);
 
   activePage = id;
 }
@@ -39,4 +46,4 @@ function clickOnMenu(e) {
 
 // start exec
 showPage(activePage);
-document.getElementById("top-menu-bar").addEventListener("click", clickOnMenu);
+$("#top-menu-bar").addEventListener("click", clickOnMenu);

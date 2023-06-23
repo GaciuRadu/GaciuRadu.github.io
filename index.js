@@ -18,7 +18,7 @@ function showPage(id) {
   link.classList.add("active");
 
   var page = document.getElementById(id);
-  console.info("show %o  element showPage..", id, page);
+  console.info("show %o  element showPage!", id, page);
   page.style.display = "block";
 
   activePage = id;
@@ -29,6 +29,7 @@ function clickOnMenu(e) {
   if (link) {
     var id = link.dataset.page;
     // console.warn("click %o menu", e.target.getAttribute("data-page"));
+    // console.warn("click %o menu", e.target.dataset.page);
     // console.warn("click %o menu", id);
     if (id) {
       showPage(id);

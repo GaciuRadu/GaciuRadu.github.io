@@ -1,6 +1,6 @@
 [
-  { "name": "HTML", "endorcement": 10, "favorite": true },
-  { "name": "Css", "endorcement": 15 },
-  { "name": "JS", "endorcement": 20, "favorite": true },
+  { "name": "HTML", "endorcement": 12, "favorite": true },
+  { "name": "Css", "endorcement": 16 },
+  { "name": "JS", "endorcement": 22, "favorite": true },
   { "name": "Excel", "endorcement": 11 }
 ]

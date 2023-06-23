@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "skills";
 
 // utilities function
 
@@ -44,16 +44,20 @@ function clickOnMenu(e) {
   }
 }
 
-function showSkills(skills) {
-  console.warn("showSkills", skills);
+function sortByEndorcements(a, b) {
+  return b.endorcement - a.endorcement;
+}
 
+function sortByName(a, b) {
+  return b.name.localeCompare(b.name);
+}
+
+function showSkills(skills) {
+  skills.sort(sortByEndorcements);
   var htmlSkills = skills.map(function (skill) {
-    // <li class="favorie">HTML</li>;
-    console.info("skill", skill);
     var cls = skill.favorite ? "favorite" : "";
     return `<li class="${cls}">${skill.name}<span>- ${skill.endorcement}</span> </li>`;
   });
-
   var ul = $("#skills ul");
   ul.innerHTML = htmlSkills.join("");
 }

@@ -2,6 +2,12 @@ a {
   color: #057988;
   text-decoration: none;
 }
+#strong1 {
+  color: red;
+}
+#strong2 {
+  color: black;
+}
 
 html {
   height: 100%;

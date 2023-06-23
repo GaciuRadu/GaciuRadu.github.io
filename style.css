@@ -2,12 +2,6 @@ a {
   color: #057988;
   text-decoration: none;
 }
-#strong1 {
-  color: red;
-}
-#strong2 {
-  color: black;
-}
 
 html {
   height: 100%;
@@ -50,6 +44,12 @@ header {
 
 #header-info {
   padding: 10px;
+}
+#strong1 {
+  color: red;
+}
+#strong2 {
+  color: black;
 }
 
 #my-table {

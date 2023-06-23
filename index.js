@@ -1,4 +1,4 @@
-var activePage = "skills";
+var activePage = "home";
 
 // utilities function
 
@@ -51,7 +51,7 @@ function showSkills(skills) {
     // <li class="favorie">HTML</li>;
     console.info("skill", skill);
     var cls = skill.favorite ? "favorite" : "";
-    return `<li class="${cls}">${skill.name}</li>`;
+    return `<li class="${cls}">${skill.name}<span>- ${skill.endorcement}</span> </li>`;
   });
 
   var ul = $("#skills ul");

@@ -45,14 +45,18 @@ function clickOnMenu(e) {
 }
 
 function showSkills() {
-  var skills = ["HTML", "css", "JS"];
+  var skills = [
+    { name: "HTML", favorite: true },
+    { name: "Css" },
+    { name: "JS", favorite: true },
+  ];
   var htmlSkills = skills.map(function (skill) {
     console.info("inside map", skill);
     // <li class="favorie">HTML</li>;
-    return `<li>${skill}</li>`;
+    var cls = skill.favorite ? "favorite" : "";
+    return `<li class="${cls}">${skill.name}</li>`;
   });
-  console.info("map", htmlSkills);
-
+  console.info("skills", htmlSkills);
   var ul = $("#skills ul");
   ul.innerHTML = htmlSkills.join("");
 }
@@ -60,5 +64,4 @@ function showSkills() {
 // start exec
 showPage(activePage);
 $("#top-menu-bar").addEventListener("click", clickOnMenu);
-
-var skills = ["HTML", "css", "JS"];
+showSkills();

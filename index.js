@@ -1,4 +1,4 @@
-var activePage = "skills";
+var activePage = "home";
 
 // utilities function
 

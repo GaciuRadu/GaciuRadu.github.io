@@ -1,14 +1,3 @@
-a {
-  color: #057988;
-}
-a:hover {
-  background-color: #93c9d0;
-  display: inline-block;
-  margin: 3px 23px 3px 23px;
-  border-radius: 0.3em;
-  transition: 0.39s;
-}
-
 html {
   height: 100%;
 }
@@ -169,13 +158,25 @@ th {
 }
 
 footer {
-  padding: 15px 0 10px 0;
+  padding: 20px 0 15px 0;
   background-color: #0798ab;
   display: flex;
-  gap: 50px;
+  gap: 20px;
   justify-content: center;
 }
 
 footer a {
   color: white;
+  padding: 0 17px 0 17px;
+  border: 10px 20px 10px 20px;
+}
+
+a {
+  color: #057988;
+}
+a:hover {
+  background-color: #93c9d0;
+  display: inline-block;
+  border-radius: 0.3em;
+  transition: 0.39s;
 }

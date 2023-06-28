@@ -55,7 +55,7 @@ function sortByName(a, b) {
 
 function showSkills(skills) {
   skills.sort(sortByEndorcements);
-  const htmlSkills = skills.map(function (skill) {
+  const htmlSkills = skills.map((skill) => {
     const cls = skill.favorite ? "favorite" : "";
     return `<li class="${cls}">${skill.name}<span>- ${skill.endorcement}</span> </li>`;
   });
@@ -65,10 +65,10 @@ function showSkills(skills) {
 
 function loadSkills() {
   const response = fetch("skills.json");
-  const loaded = response.then(function (r) {
+  const loaded = response.then((r) => {
     return r.json();
   });
-  loaded.then(function (skills) {
+  loaded.then((skills) => {
     showSkills(skills);
   });
 }

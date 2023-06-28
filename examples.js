@@ -16,6 +16,7 @@ var el = document.getElementById("el");
 
 name = "Radu";
 
+
 function printInfo() {
   console.log(typeof skills, skills, age);
   console.info("my name", name);
@@ -37,3 +38,17 @@ document.getElementById("job-title").addEventListener("click", function () {
     document.getElementById("job-title").innerHTML = "Wow ce <i>NASPA</i> este";
   }
 });
+
+var fVariable = function () {
+  console.info("functie ca variabila");
+};
+
+var fVariable = function () {
+  console.info("functie ca variabila");
+};
+
+printInfo();
+fVariable();
+
+console.info("t1", typeof)
+

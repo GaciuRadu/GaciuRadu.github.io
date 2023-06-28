@@ -1,4 +1,4 @@
-let activePage = "home";
+let activePage = "skills";
 
 // utilities function
 

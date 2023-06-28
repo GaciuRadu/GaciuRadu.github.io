@@ -79,7 +79,7 @@ function loadSkills() {
   const loaded = response.then((r) => r.json());
 
   loaded.then((skills) => {
-    console.info(skills);
+    // console.info(skills);
     showSkills(skills);
   });
 }

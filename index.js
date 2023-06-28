@@ -1,4 +1,14 @@
-let activePage = "skills";
+let activePage = "home";
+
+(function start() {
+  const hash = document.location.hash.substring(1);
+  if (hash) {
+    var link = $(`#top-menu-bar a[data-page=${hash}]`);
+    if (link) {
+      activePage = hash;
+    }
+  }
+})();
 
 // utilities function
 
@@ -41,6 +51,7 @@ function clickOnMenu(e) {
     // console.warn("click %o menu", id);
     if (id) {
       showPage(id);
+      document.location.hash = `#${id}`;
     }
   }
 }

@@ -143,6 +143,7 @@ th {
 }
 
 #top-menu-bar a {
+  cursor: pointer;
   text-decoration: none;
   padding: 1px 15px 1px 15px;
   color: #fff;

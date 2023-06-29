@@ -26,5 +26,5 @@ My first try, 16 Jun, 2023
 - git status
 - git add .
 - git status
-- git commit -m"the name of the commit"
+- git commit -m"the commit name"
 - git push

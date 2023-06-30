@@ -217,3 +217,39 @@ a:hover {
   border-radius: 0.3em;
   transition: 0.39s;
 }
+
+#text-carousel {
+  min-height: 60px;
+  padding: 3px 0;
+  border-top: 2px solid #ffffff33;
+}
+.text-carousel-wrap {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #0798ab;
+  overflow: hidden;
+  width: 100%;
+}
+
+.text-carousel-line {
+  white-space: nowrap;
+  transition: 2s all ease;
+  margin-left: 0;
+}
+
+@media (max-width: 500px) {
+  #top-menu-bar a {
+    padding: 5px 10px 5px 10px;
+  }
+  #content {
+    flex-direction: column-reverse;
+  }
+  #text-carousel {
+    min-height: 42px;
+  }
+  .text-carousel-wrap {
+    font-size: 26px;
+    line-height: 14px;
+  }
+}

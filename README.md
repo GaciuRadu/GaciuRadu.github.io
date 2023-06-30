@@ -28,3 +28,12 @@ My first try, 16 Jun, 2023
 - git status
 - git commit -m"the commit name"
 - git push
+
+# 📚 What I learned
+
+-use HTML with CSS
+-create layouts
+-understand basics of JS
+-understand how dynamic HTML works
+-basic git commands and usage
+-deploy your site on github
